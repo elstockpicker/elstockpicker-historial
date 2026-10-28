@@ -1,0 +1,28 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Histórico · El Stock Picker</title>
+<style>
+:root{--papel:#F7F7F0;--cuadricula:#D6DEE6;--tinta:#1E3A86;--lapiz:#4A4F59;--marca:#FFE45E;
+--pos:#136637;--neg:#B92424;--espera:#8A4B00}
+*{box-sizing:border-box}body{margin:0;background:var(--papel);color:var(--lapiz);
+font-family:'Atkinson Hyperlegible',system-ui,sans-serif;
+background-image:linear-gradient(var(--cuadricula) 1px,transparent 1px),linear-gradient(90deg,var(--cuadricula) 1px,transparent 1px);
+background-size:24px 24px}
+main{max-width:1040px;margin:0 auto;padding:32px 16px}
+h1{color:var(--tinta);margin:0 0 4px}p{margin:4px 0 16px}
+.tabla{overflow-x:auto;background:var(--papel);border:1px solid var(--cuadricula)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-family:'Atkinson Hyperlegible Mono',ui-monospace,monospace;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--cuadricula);text-align:right;white-space:nowrap}
+th:nth-child(-n+3),td:nth-child(-n+3){text-align:left}th{color:var(--tinta)}
+.pos{color:var(--pos)}.neg{color:var(--neg)}.EN{color:var(--pos);font-weight:700}
+.ESPERANDO{color:var(--espera);font-weight:700}.CERRADA{color:var(--lapiz);font-weight:700}
+small{display:block;margin-top:16px}
+</style></head><body><main>
+<h1>El Stock Picker · Histórico</h1>
+<p>Wall Street, explicado como en clase. Cada idea queda registrada aquí y no se edita: las correcciones se agregan como filas nuevas.</p>
+<div class="tabla"><table><thead><tr><th>Idea</th><th>Ticker</th><th>Estado</th><th>Publicada</th><th>Valor estimado</th>
+<th>Zona de compra</th><th>Entrada</th><th>Precio de entrada</th><th>Rendimiento</th><th>S&amp;P 500 (SPY)</th>
+<th>Diferencia</th><th>Cierre</th></tr></thead><tbody></tbody></table></div>
+<small>Rendimientos totales con cierres ajustados por dividendos, desde la entrada hasta hoy o hasta el cierre de la idea.
+Las ideas publicadas en ESPERANDO PRECIO entran al primer cierre dentro de la zona. Actualizado 2026-10-28 03:33 UTC.
+Contenido educativo, no es recomendación personalizada. Bitácora completa: eventos.csv · precios: precios.csv.</small>
+</main></body></html>
